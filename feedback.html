@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="logo/echothursday.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>EchoThursday</title>
+</head>
+<body>
+     <!--Header Start-->
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <img src="logo/echothursday.png" width="250px" height="120x" alt="jjlogo">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="catering.html" class="nav-link">Catering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="feedback.html" id="a" class="nav-link">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Header Ending-->
+
+
+    <!--feedback start-->
+    <br><br><br>
+    <div class="container">
+        <div class="feedback">
+            <div class="row">  
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h1 class="text-center mt-5 font-weight-bold">Feedback</h1>
+                    <hr class="line">
+                    <h6 class="text-center">Please write your feedback below: </h6>
+                    <h3 class="mt-4">How do you rate the taste of the food and our service?</h3>
+        
+            <form>
+                <label class="radio-inline"><input type="radio" required name="experience" value="good">Good</label>
+                <label class="radio-inline"><input type="radio" name="experience" value="average">Average</label>
+                <label class="radio-inline"><input type="radio" name="experience" value="bad">Bad</label>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label class="col-md-4 fb">Full Name<br>
+                    <input type="text" id="text" required="" placeholder="John Cena">
+                </label>
+
+                <label class="col-md-4 fb">Email<br>
+                    <input type="text" id="text" required placeholder="example@gmail.com">
+                </label>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label class="col-md-4 fb">Age <br>
+                    <input type="number" id="text" required="" placeholder="20"></label>
+
+                    <label class="col-md-4 fb">Phone Number<br>
+                        <input type="number" id="text" required placeholder="+69 9971332269">
+                    </label>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label class="col-md-8 fb">Message<br>
+                        <textarea  id="message" required cols="77" rows="10" placeholder="Write something about your experience in our restaurant"></textarea>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <button class="btn btn-primary" id="mybtn">Submit</button>
+                </div>
+            </div>
+            </form>
+        </div>         
+    </div>
+    <!--feedback end-->
+    <!--Script Start-->
+    <script>
+        document.getElementById("mybtn").addEventListener("click", function() {
+          alert("Thanks for the feedback!");
+        });
+        </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Script Ending-->
+</body>
+</html>

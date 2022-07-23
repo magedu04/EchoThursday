@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="logo/echothursday.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>EchoThursday</title>
+</head>
+<body>
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
+            <img class="homeimage" src="logo/echothursday.png" width="178px" height="80x" alt="jjlogo">
+            <a class="toptext">Admin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fa fa-user-circle-o"  role="botton"></i>
+                  </button>
+                  <div class="collapse" id="collapseExample">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Logout
+                      </button>
+                  </div>
+              </form>
+            </div>
+          </nav>
+    </header>
+
+    <!--sidebar-->
+    <div class="row">
+        <div class="col-1">
+            <nav id="sidebar" class="col sidebar">
+                <a href="#" class="navbar-brand">
+                    
+                </a>
+                    <ul class="nav flex-column vertical-nav">
+                        <li class="nav-item">
+                        <a class="nav-link " href="admin.html">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+                                <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                            </svg>
+                            Home
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id="active" href="adminmenu.html">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-menu-button-wide-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14 7H2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zM2 6a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H2z"/>
+                                <path fill-rule="evenodd" d="M15 11H1v-1h14v1zM2 12.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm9.927.427l.396.396a.25.25 0 0 0 .354 0l.396-.396A.25.25 0 0 0 13.396 2h-.792a.25.25 0 0 0-.177.427z"/>
+                            </svg>
+                            Menu
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="admincatering.html">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-book-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                            </svg>
+                            Catering
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="adminfeedback.html">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-left-dots-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>
+                            Feedback
+                        </a>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+        <!--sidebar end-->
+
+        <!--AdminMenu Start-->
+        <div class="col-10">
+            <div class="card">
+                <div class="card-header " id="card-header">
+                    <h5>Beverage</h5>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card-body">
+                            <div class="card-header" id="card-header">
+                                <h4>Cocktails</h4>
+                            </div>
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Drinks</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Ordered</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Juicy Cocktail</td>
+                                        <td>3.69€</td>
+                                        <td>6,969</td>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Cosmopolitan</td>
+                                        <td>2.69€</td>
+                                        <td>3,690</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Dry Martini</td>
+                                        <td>2.69€</td>
+                                        <td>3,122</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Margarita</td>
+                                        <td>2.69€</td>
+                                        <td>4,201</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Tequila Sunrise</td>
+                                        <td>2.69€</td>
+                                        <td>1,329</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Vodka Martini</td>
+                                        <td>4.69€</td>
+                                        <td>3,699</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body">
+                            <div class="card-header" id="card-header">
+                                <h4>Yummy Drinks</h4>
+                            </div>
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Drinks</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Ordered</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Hot Chocolate</td>
+                                        <td>3.69€</td>
+                                        <td>4,928</td>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Valencia Fizz</td>
+                                        <td>2.69€</td>
+                                        <td>3,269</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Pink Lemonade</td>
+                                        <td>2.69€</td>
+                                        <td>2,690</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Iced Coffe</td>
+                                        <td>2.69€</td>
+                                        <td>4,069</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Pina Colada</td>
+                                        <td>3.69</td>
+                                        <td>2,311</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Black Coffee</td>
+                                        <td>3.69€</td>
+                                        <td>5,369</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body">
+                            <div class="card-header" id="card-header">
+                                <h4>Cocktails</h4>
+                            </div>
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Drinks</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Ordered</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Celtic Soul</td>
+                                        <td>7.69€</td>
+                                        <td>1,690</td>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Daddy's Whiskey</td>
+                                        <td>6.69€</td>
+                                        <td>6,969</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Martini</td>
+                                        <td>13.69€</td>
+                                        <td>2,781</td>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Smirrnoff Ice Original</td>
+                                        <td>4.69€</td>
+                                        <td>2,969</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Soju</td>
+                                        <td>2.69€</td>
+                                        <td>4,269</td>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Vodka</td>
+                                        <td>8.69€</td>
+                                        <td>3,690</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-3">
+
+                    </div>
+                </div>
+            </div>  
+            <br>
+            
+
+<!-----------------------------------------------------------------DISHES-------------------------------------------------------------->
+
+                <div class="card">
+                    <div class="card-header " id="card-header">
+                        <h5>Dishes</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card-body">
+                                <div class="card-header" id="card-header">
+                                    <h4>Foods</h4>
+                                </div>
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Foods</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Ordered</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Ceviche</td>
+                                            <td>12.69€</td>
+                                            <td>2,969</td>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Chicken Curry</td>
+                                            <td>9.69€</td>
+                                            <td>2,230</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Chicken Adoba</td>
+                                            <td>11.69€</td>
+                                            <td>3,222</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Chicken Teriyaki</td>
+                                            <td>8.69€</td>
+                                            <td>3,031</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>Eggs Benedict</td>
+                                            <td>9.69€</td>
+                                            <td>2,229</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>Ultimate Fried Chicken Sandwhich</td>
+                                            <td>8.69€</td>
+                                            <td>4,699</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>Kimchi Fried Rice</td>
+                                            <td>5.69€</td>
+                                            <td>3,452</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>Lamb Salad with Fregola</td>
+                                            <td>8.69€</td>
+                                            <td>2,669</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>Sushi Rolls</td>
+                                            <td>7.69€</td>
+                                            <td>4,069</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                         </div>
+                         <div class="col-6">
+                            <div class="card-body">
+                                <div class="card-header" id="card-header">
+                                    <h4>Special</h4>
+                                </div>
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Foods</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Ordered</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Perfect For Me</td>
+                                            <td>7.69€</td>
+                                            <td>9,969</td>
+                                        <tr>
+                            </div>
+                         </div>
+                    
+                                   
+            
+
+<!--script-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--Script Ending-->
+</body>
+</html>

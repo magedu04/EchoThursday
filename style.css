@@ -1,0 +1,272 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/*background start*/
+body {
+    background-image: url(background/background3.jpg);
+    
+}
+/*background End*/
+
+
+
+/*header Start*/
+#a {
+    border-style: solid;
+    border-color: rgb(87, 53, 34);
+    background-color: red;
+    border-radius: 20%;
+    
+    
+  }
+.nav-link {
+    font-size: 30px;
+    color:rgb(41, 9, 9);
+    font-family: "Sofia";
+}
+
+.navbar-nav :hover {
+    background-color: rgb(209, 36, 36);
+    color: white;
+    border-radius: 20%;
+}
+
+/*Header End*/
+
+
+/*home start*/
+.content {
+    width: 100%;
+}
+
+.homeimage {
+    width: 250px;
+    height: 120px;
+}  
+/*home end*/
+
+
+    /*Content Start*/
+.content {
+    padding: 10vh;
+   
+}
+
+    /*Content End*/
+
+.homeh1 {
+    font-size: 52px;
+    margin: 20px 0;
+    color: darkorange;
+}
+
+.homep {
+    font-size: 23px;
+    color: white;
+}
+
+.imghome{
+    box-shadow: 5px 5px 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*home ending*/
+
+
+
+
+
+/*homefooter start*/
+
+.bg-f{
+	background-image: url("background/Footer-background.jpg");
+	background-attachment: scroll;
+	background-clip: initial;
+	background-color: rgba(0, 0, 0, 0);
+	background-origin: initial;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    position: relative;
+    color: white;
+    padding: 5px;
+    
+}
+
+/*homefooter End */ 
+
+
+
+
+
+/*Menu start*/ 
+
+
+.category {
+    font-family: 'Lobster';
+    color: rgb(63, 13, 241);
+    font-size: 80px;
+    box-shadow: 5px 5px 10px;
+}
+.cocktails {
+    color: rgb(251, 255, 0);
+    font-size: 50px;
+    text-decoration: underline;
+}
+.menucocktails {
+    box-shadow: 5px 5px 10px;
+    max-width: 100%;
+    
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 10px;;
+    
+    
+}
+
+.cocktailh3 {
+    color:rgb(251, 255, 0);
+    font-size: 30px;
+}
+
+.menupic{
+    width: 100%;
+    
+}
+
+.descrip {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    right: 0;
+    height: 100%;
+    background: rgba(207, 166, 113, 0.9);
+    padding: 12px 12px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.descrip p{
+    color: #ffffff;
+    font-size: 18px;
+    border-bottom: 1px dashed #010101;
+    margin: 0px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.descrip h5{
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.menucocktails:hover .descrip{
+    bottom: 0px;
+}
+.menucocktails{
+    margin: 30px 0px;
+}
+/*Menu End */ 
+
+
+
+
+
+
+
+/*Catering start*/ 
+.rows{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+.in{
+    width: 180px;
+    background-color: white;
+    border-color: black;
+    border-radius: 5px;
+}
+
+
+.hed{
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+.pg{
+    color: black;
+}
+.lbl{
+    color: black;
+}
+.pl{
+    color: black;
+}
+.cateringcontent {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 20px;
+    
+    width: 70%;
+    margin: auto;
+}
+/*Catering End */ 
+
+
+
+
+
+
+/*Feedback start*/
+.feedback {
+    background-color: rgba(255, 255, 255, 0.904);
+    padding-bottom: 15px;
+    border-radius: 15px;
+}
+
+.radio-inline {
+    margin: 0px 40px 20px 0px;
+    cursor: pointer;
+}
+
+#text{
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: none;
+    width: 100%;
+    color: #000;
+}
+#message{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+}
+.fb {
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+}
+.btn-primary{
+    border-radius: 30px;
+    margin: auto;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%
+    
+}
+
+.line {
+    border: 0.5px solid blue;
+}
+/*Feedback End */ 
+
+

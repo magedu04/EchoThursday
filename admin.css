@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*admin*/ /*topbar*/
+header {
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+    margin-bottom: 1px;
+    background-color: rgb(6, 19, 18);
+}
+.toptext{
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+    box-shadow: 0.3px 0.3px 0.3px;
+}
+
+.adminclass{
+    font-size: 100px;
+}
+.adminnav{
+    box-shadow: 2px 2px 10px; 
+}
+
+    
+
+/*topbar end*/
+/*
+#sidebarnav{
+    
+    top: 10vh;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+    
+}
+*/
+/*sidebar*/
+
+#sidebar{
+    position: fixed;
+    top: 10vh;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    
+    max-width: 16vh; 
+}
+
+
+#sidebar .nav-item {
+    
+    padding: 10px 0;
+}
+
+#sidebar.nav-item a {
+    color: rgba(0, 0, 0, .2)
+}
+
+#active {
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+}
+
+a.navbar-brand {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.nav a{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    
+}
+.bi {
+    color: gray;
+    font-size: 19px;
+}
+.nav-link:hover {
+    background-color:rgba(128, 128, 128, 0.329);
+    border-radius: 20px;
+    
+    color:black;
+}
+/*sidebar end*/
+
+
+/*admin feedback*/
+.card {
+    top: 10vh;
+}
+
+
+/*admin feedback end*/
+
+
+
+/*admin home*/
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+
+#jericho {
+    border-radius: 50%;
+}
+#ownersspacing {
+    padding-left: 10vh;
+}
+
+/*admin home end*/
+
+
+/*admin menu start*/
+
+#card-header {
+    background-color: rgb(160, 109, 14);
+}
+#card-header h5{
+    color: white;
+    font-size: 40px;
+    
+}
+#card-header h4{
+    color: white;
+    font-size: 25px;
+    
+}
